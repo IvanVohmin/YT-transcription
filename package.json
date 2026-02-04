@@ -15,7 +15,6 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "random-useragent": "^0.5.0",
     "youtube-transcript-plus": "^1.1.1"
   },
   "devDependencies": {

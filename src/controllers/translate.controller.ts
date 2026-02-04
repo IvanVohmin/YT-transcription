@@ -6,9 +6,8 @@ import {
   YoutubeTranscriptNotAvailableLanguageError,
 } from "youtube-transcript-plus";
 import type { Request, Response } from "express";
-import { isValidUrl } from "../utils/isValidUrl";
-import { decodeHtml } from "../utils/decodeHtml";
-import * as UserAgent from 'random-useragent';
+import { isValidUrl } from "../utils/isValidUrl.js";
+import { decodeHtml } from "../utils/decodeHtml.js";
 
 export const getTranslation = async (req: Request, res: Response) => {
   try {
@@ -29,7 +28,7 @@ export const getTranslation = async (req: Request, res: Response) => {
     }
 
     const transcript = await fetchTranscript(url, {
-      userAgent: UserAgent.getRandom(),
+      userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.27 Safari/537.36',
     });
 
     const decodedTranscript = transcript.map((item) => ({
