@@ -20,3 +20,5 @@ API errors format:
   error: "error's message here"
 }
 ```
+
+Stack: Express JS + Typescript
