@@ -1,5 +1,5 @@
 import { Router } from "express";
-import translateRouter from "./api/translation.route";
+import translateRouter from "./api/translation.route.js";
 
 const router = Router();
 

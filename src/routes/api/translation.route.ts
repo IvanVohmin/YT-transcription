@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getTranslation } from "../../controllers/translate.controller";
+import { getTranslation } from "../../controllers/translate.controller.js";
 
 const translateRouter = Router();
 
